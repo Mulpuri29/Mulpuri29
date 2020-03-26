@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+// Set brand colors.
+
+// Update Bulma's global variables.
+
+// Update Bulma's component variables.
+
+// Import what you need form Bulma.
+@import "../../node_modules/bulma/bulma.sass";
+@import "bulma-extensions.scss";
+
+// Import 3rd party.
+@import "../../node_modules/nprogress/nprogress.css";
+
+// Site styles.
+@import "layout.scss";
+
+label.required:after
+{
+	color: $danger;
+	content: "*";
+}
+
+.fieldset
+{
+	@extend .box;
+	border: 0 none;
+
+	> .legend
+	{
+		@extend .label;
+		background-color: $white;
+		padding: 0 5px;
+	}
+}
